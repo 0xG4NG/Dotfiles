@@ -1,0 +1,22 @@
+---
+- name: Configure dotfiles for individual tools
+  hosts: localhost
+  roles:
+
+    - role: fish
+      tags: [dotfiles]
+
+    - role: starship
+      tags: [dotfiles]
+
+    - role: bashrc
+      tags: [dotfiles]
+
+    - role: ghostty
+      tags: [dotfiles]
+
+#    - role: nvim
+#      tags: [dotfiles]
+
+#   - role: git
+#      tags: [dotfiles]

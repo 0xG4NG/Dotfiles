@@ -1,0 +1,7 @@
+---
+- name: Clean up the system
+  hosts: all
+
+  roles:
+    - role: cleanup
+      tags: [cleanup]

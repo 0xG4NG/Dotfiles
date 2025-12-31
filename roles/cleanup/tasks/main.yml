@@ -1,0 +1,10 @@
+---
+- name: Eliminar dependencias que ya no son necesarias (autoremove)
+  become: true
+  ansible.builtin.dnf:
+    autoremove: true
+
+- name: Limpiar toda la caché de dnf
+  become: true
+  ansible.builtin.command: dnf clean all
+  changed_when: false
