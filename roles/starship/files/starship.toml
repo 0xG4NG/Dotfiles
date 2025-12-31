@@ -58,7 +58,7 @@ discharging_symbol = " "
 #[[battery.display]] # "bold yellow" style and 💦 symbol when capacity is between 10% and 30%
 #threshold = 100
 #style = "green"
-#discharging_symbol = " " 
+#discharging_symbol = " "
 
 # Setting Icons for git status
 [git_status]
@@ -180,7 +180,7 @@ style = "bold italic red"
 format = "[git:](bold blue)[\\(](bold blue)[$branch(:$remote_branch)]($style)[\\)](bold blue) "
 
 [golang]
-disabled = true
+disabled = false
 symbol = " "
 
 [haskell]
